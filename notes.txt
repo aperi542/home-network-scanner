@@ -1,0 +1,30 @@
+DAY 1 - December 30, 2025
+
+What I built today:
+- Created a Python network scanner that finds devices on my home network
+- Successfully scanned my network and found 3 active devices
+
+What I learned:
+- How IP addresses and MAC addresses work
+- How ARP requests discover devices on a network
+- How to use the scapy library in Python
+- How to use Git and GitHub for version control
+- Basic Terminal/command line skills
+
+Technical skills used:
+- Python programming
+- Network protocols (ARP)
+- Git version control
+- Mac Terminal
+
+What's working:
+- Scanner successfully finds active devices
+- Shows IP and MAC addresses for each device
+
+What I'll add next (Jan 5):
+- Vendor lookup using MAC address prefixes
+- Device categorization (mobile, computer, IoT, etc.)
+- Better formatted output
+- Security insights
+
+Time spent: ~1 hour
