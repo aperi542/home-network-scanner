@@ -25,6 +25,7 @@ As IoT devices become increasingly common in homes, understanding what's connect
   - Flags high numbers of IoT devices
   - Identifies unknown devices for manual review
   - Summary statistics
+- Interactive Dashboard: Web-based visualization with charts and device cards
 
 ## Technical Implementation
 
@@ -69,6 +70,13 @@ ip_range = "192.168.1.0/24"  # Change this to your network
 ```bash
 sudo python3 scanner.py
 ```
+
+4. **View the dashboard**:
+```bash
+python3 -m http.server 8000
+```
+Then open your browser to: http://localhost:8000/dashboard.html
+
 
 ## Example Output
 ```
