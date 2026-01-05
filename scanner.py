@@ -1,5 +1,7 @@
 import scapy.all as scapy
 from mac_vendor_lookup import MacLookup
+import json
+from datetime import datetime
 
 def get_vendor(mac_address):
     """Look up the vendor/manufacturer from MAC address"""
@@ -117,3 +119,16 @@ if __name__ == "__main__":
         print(f"  Category:    {device['category']}")
     
     print_summary(devices)
+    
+    # Save results to JSON for dashboard
+    scan_data = {
+        "scan_time": datetime.now().strftime("%B %d, %Y - %I:%M %p"),
+        "total_devices": len(devices),
+        "devices": devices
+    }
+    
+    with open("scan_results.json", "w") as f:
+        json.dump(scan_data, f, indent=2)
+    
+    print("\n✓ Results saved to scan_results.json")
+    print("✓ Open dashboard.html in your browser to view visualization\n")

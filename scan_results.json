@@ -1,0 +1,30 @@
+{
+  "scan_time": "January 05, 2026 - 10:33 AM",
+  "total_devices": 4,
+  "devices": [
+    {
+      "ip": "10.0.5.4",
+      "mac": "0c:dc:91:cb:a4:05",
+      "vendor": "Amazon Technologies Inc.",
+      "category": "IoT"
+    },
+    {
+      "ip": "10.0.5.29",
+      "mac": "70:c9:32:6a:86:e2",
+      "vendor": "Dreame Technology (Suzhou) Limited",
+      "category": "IoT"
+    },
+    {
+      "ip": "10.0.5.66",
+      "mac": "b0:dc:ef:d4:50:1c",
+      "vendor": "Intel Corporate",
+      "category": "Computer"
+    },
+    {
+      "ip": "10.0.5.23",
+      "mac": "cc:9e:a2:a6:80:35",
+      "vendor": "Amazon Technologies Inc.",
+      "category": "IoT"
+    }
+  ]
+}
