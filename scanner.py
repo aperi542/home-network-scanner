@@ -84,14 +84,21 @@ def print_summary(devices):
     iot_count = categories.get('IoT', 0)
     unknown_count = categories.get('Unknown', 0)
     
+    has_warning = False
+    
     if iot_count > 3:
         print(f"  ⚠️  High number of IoT devices ({iot_count}) - ensure they're updated regularly")
+        has_warning = True
+    
     if unknown_count > 0:
         print(f"  ⚠️  {unknown_count} unknown device(s) detected - review manually")
-    if iot_count == 0 and unknown_count == 0:
-        print("  ✓ Network appears normal")
+        has_warning = True
     
-    print("="*70)
+    if not has_warning:
+        print("  ✓ Network appears normal - no immediate concerns detected")
+    
+    print("="*70 + "\n")
+
 
 if __name__ == "__main__":
     ip_range = "10.0.5.0/24"
